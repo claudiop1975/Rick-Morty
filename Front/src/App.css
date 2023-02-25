@@ -1,0 +1,10 @@
+.App {
+   display: flex !important;
+   border: solid 2px #fff !important;
+   text-align: center;
+   background-image: url("../public/rm02.jpg");
+   background-repeat:initial;
+   background-size: cover;
+   height: 100vh;
+   align-self: center;
+}
