@@ -3,11 +3,11 @@ import styled from 'styled-components';
 /* import { addFavorite, removeFavorite } from "../redux/actions.js";
 import { connect } from 'react-redux'; */
 const StyledCards = styled.div`
- display:flex;
-justify-content:space-around;
-// display: grid;
-// grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-// gap: 16px;
+//  display:flex;
+// justify-content:space-around;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+gap: 16px;
 `
 
 export default function Cards(props) {

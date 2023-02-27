@@ -3,8 +3,8 @@
    border: solid 2px #fff !important;
    text-align: center;
    background-image: url("../public/rm02.jpg");
-   background-repeat:initial;
-   background-size: cover;
-   height: 100vh;
-   align-self: center;
+   background-size:contain;
+   background-repeat: cover !important;
+   height: 100%;
+   align-self:auto;
 }

@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const StyledCard = styled.div`
 display:flex;
-flex-direction: column;
-position:sticky;
-max-width:15%;
+flex-direction:column;
+position: relative;
+max-width:100%;
 border: solid gray 2px;
 border-radius: 3px;
 background: white;
