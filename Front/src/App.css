@@ -2,9 +2,9 @@
    display: flex !important;
    border: solid 2px #fff !important;
    text-align: center;
-   background-image: url("../public/rm02.jpg");
-   background-size:contain;
-   background-repeat: cover !important;
-   height: 100%;
+   background-image: url("D:\rick_and_morty\Front\public\homeworkRAM.jpg");
+   background-size:auto;
+   background-repeat:repeat repeat-y;
+   height: 3200px;
    align-self:auto;
 }
