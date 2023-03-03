@@ -41,7 +41,7 @@ export default function SearchBar(props) {
   };
 
   const handleSearch = () => {
-    if (characterId!== ""|| characterId < 0 || characterId > 826) {
+    if (characterId < 0 || characterId > 826) {
       alert("El id debe ser un número entre 0 y 826");
     }
     props.onSearch(characterId);
