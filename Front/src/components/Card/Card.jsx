@@ -4,44 +4,44 @@ import { addFavorite, removeFavorite } from "../../redux/actions.js";
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
-
 const StyledCard = styled.div`
 display:flex;
 flex-direction:column;
 position: relative;
 max-width:100%;
-border: solid gray 2px;
+border: solid green 6px;
 border-radius: 3px;
-background: white;
-`
+background: rgba(25,25,25,0.7);
+border-radius: 3rem;
+color: red;`
 
 const Button = styled.button`
 background: red;
 color: white;
 border-radius: 3px;
 align-self: flex-end;
-margin: 2px;
-`
+margin: 2px;`
+
 const Name = styled.h2`
 background: black;
-opacity: 55%;
-color: white;
+opacity: 75%;
+color: red;
 position:absolute; 
 bottom:15%;
-font-size: 18px;
-`
+font-size: 18px;`
+
 const Spec = styled.div`
 display: flex;
-justify-content:space-around;
-`
+justify-content:space-around;`
+
 const Img = styled.img`
-padding-top: 5px
-`
+padding-top: 5px`
+
 const H2 = styled.h2`
 font-family: Arial, Helvetica, sans-serif;
 font-size: 18px;
 font-weight: lighter;
-`
+color: #29cf29;`
 
 export const Card = ({ name, species, gender, image, id, removeFavorite, addFavorite, myFavorites, onClose }) => {
 
@@ -73,8 +73,6 @@ export const Card = ({ name, species, gender, image, id, removeFavorite, addFavo
       </StyledCard>
    );
 }
-
-
 
 function mapDispatchToProps(dispatch) {
    return {

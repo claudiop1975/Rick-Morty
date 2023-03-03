@@ -26,17 +26,17 @@ const Form = ({login}) => {
             <form onSubmit={handleSubmit} >
                 <div>
                     <label >Username:</label>
-                    <input className={errors.username && 'warning'} name='username' placeholder='Escribe tu email...' type={'text'} value={userData.username} onChange={handleChange}></input>
+                    <input className={errors.username && 'warning'} name='username' placeholder='Type your email...' type={'text'} value={userData.username} onChange={handleChange}></input>
                     <p className='danger'>{errors.username}</p>
                 </div>
 
                 <div>
                     <label >Password:</label>
-                    <input className={errors.password && 'warning'} name='password' placeholder='Escribe tu password...' type={'password'} value={userData.password} onChange={handleChange}></input>
+                    <input className={errors.password && 'warning'} name='password' placeholder='Type your password...' type={'password'} value={userData.password} onChange={handleChange}></input>
                     <p className='danger'>{errors.password}</p>
                 </div>
              
-                <button type="submit" >Enviar</button>
+                <button type="submit" >Login</button>
             </form>
         </div>
     )

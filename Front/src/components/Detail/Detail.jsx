@@ -3,13 +3,21 @@ import { useParams ,useNavigate} from "react-router-dom";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-color: white;
+color: Yellow;
 width:50%;
 display: inline-block;
 `
+const H1 = styled.h1`
+Background-color: Black;
+`
+const H2 = styled.h2`
+Background-color: Black;
+`
+
 const StyledImg = styled.img`
 border-radius: 10px;
-margin-top: 100px
+margin-top: 100px;
+border: solid yellow 6px;
 `
 
 
@@ -32,24 +40,24 @@ useEffect(() => {
       });
     return setCharacter({})
   }, [detailId])
-
-    return (
+    console.log(character);
+      
+  return (
       <div>
         <StyledDiv>
         <div>
-          <h1>Nombre: {character.name}</h1>
-        <hr></hr>
-          <h2>Status: {character.status}</h2>
-          <h2>Especie: {character.species}</h2>
-          <h2>Genero: {character.gender}</h2>
-          <h2>Origen: {character.origin?.name}</h2>
+          <H1>Nombre: {character.name}</H1>
+        <br></br>
+          <H2>Status: {character.status}</H2>
+          <H2>Especie: {character.species}</H2>
+          <H2>Genero: {character.gender}</H2>
+          <H2>Origen: { character.origin?.name }</H2>
         </div>
-       </StyledDiv>
-       <StyledDiv>
-          <StyledImg src={character.image} alt="" />
-       </StyledDiv>
-          <button onClick={()=>navigate(-1)}>Volver</button>
-      </div>
-       
+      </StyledDiv>
+      <StyledDiv>
+        <StyledImg src={character.image} alt="" />
+      </StyledDiv>
+        <button Style= "width: 120px; height: 50px; font-Size: 20px" onClick={()=>navigate(-1)}>Back</button>
+    </div>
     );
  }

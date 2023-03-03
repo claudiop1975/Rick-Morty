@@ -9,13 +9,6 @@ import Favorites from './components/favorites/Favorites.jsx'
 import { useEffect, useState } from 'react'
 import { useNavigate, Route, Routes, useLocation } from 'react-router-dom'
 
-
-
-
-
-
-
-
 function App() {
   const [characters, setCharacters] = useState([])
   const [access, setAccess] = useState(true)
