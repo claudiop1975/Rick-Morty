@@ -4,9 +4,6 @@ import styled from "styled-components";
 import { orderCards,filterCards } from '../../redux/actions.js';
 import { Link } from "react-router-dom";
 
-const Spec = styled.div`
-display: flex;
-justify-content:space-around;`
 const StyledCard = styled.div`
 display:flex;
 flex-direction: column;
